@@ -1,5 +1,13 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite"
+  "version": 2,
+  "builds": [
+    {
+      "src": "Catase/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "Catase/dist" }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "Catase/dist/$1" }
+  ]
 }

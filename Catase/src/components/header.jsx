@@ -1,6 +1,6 @@
 
 import foto from '../assets/Header.png'
-import fotom from '../assets/Header2.png'
+import fotom from '../assets/header2.png'
 export default function Header() {
   return (
     <header className="bg-white py-16 px-6 md:px-12">

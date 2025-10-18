@@ -5,7 +5,8 @@
       "src": "Catase/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "Catase/dist"
+        "distDir": "dist",
+        "buildCommand": "npm run build"
       }
     }
   ],

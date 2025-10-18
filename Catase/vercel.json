@@ -4,10 +4,15 @@
     {
       "src": "Catase/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "Catase/dist" }
+      "config": {
+        "distDir": "Catase/dist"
+      }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
